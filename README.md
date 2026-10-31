@@ -1,4 +1,4 @@
-# OLMO · Tienda online de ropa (frontend)
+# DELFI SHOP · Tienda online de ropa (frontend)
 
 Frontend completo de una tienda de ropa para toda la familia (Caballero, Dama, Niño, Niña y Bebé) con un panel administrativo para inventario, productos, pedidos y ventas.
 
