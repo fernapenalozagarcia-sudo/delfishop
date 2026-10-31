@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generar pedido · OLMO</title>
+    <meta name="description" content="Captura tus datos de contacto y entrega para generar tu pedido." />
+    <meta name="theme-color" content="#1b1a17" />
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <script src="../js/boot-check.js"></script>
+    <script type="module" src="../js/pages/checkout.js"></script>
+  </head>
+  <body>
+    <div id="app-header"></div>
+
+    <main id="main" class="page" tabindex="-1">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <ol>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><span aria-current="page">Generar pedido</span></li>
+          </ol>
+        </nav>
+        <header class="page-header">
+          <div>
+            <h1 class="page-title">Generar pedido</h1>
+            <p class="page-subtitle">Completa tus datos. No se realizará ningún cobro en línea.</p>
+          </div>
+          <ol class="checkout-steps" aria-label="Progreso de compra">
+            <li class="is-done">Carrito</li>
+            <li class="is-current" aria-current="step">Datos y entrega</li>
+            <li>Confirmación</li>
+          </ol>
+        </header>
+        <div id="checkout-root" aria-busy="true"></div>
+      </div>
+    </main>
+
+    <div id="app-footer"></div>
+  </body>
+</html>

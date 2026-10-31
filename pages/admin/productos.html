@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Productos · Administración OLMO</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#1b1a17" />
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/components.css" />
+    <link rel="stylesheet" href="../../css/admin.css" />
+    <script src="../../js/boot-check.js"></script>
+    <script type="module" src="../../js/pages/admin/products.js"></script>
+  </head>
+  <body class="admin-body">
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+    <div class="admin-shell">
+      <aside class="admin-sidebar" id="admin-sidebar"></aside>
+      <div class="admin-main">
+        <header class="admin-topbar" id="admin-topbar"></header>
+        <main id="main" class="admin-content" tabindex="-1">
+          <header class="page-header">
+            <div>
+              <h1 class="page-title">Productos</h1>
+              <p class="page-subtitle">Crea, edita, publica u oculta los productos del catálogo.</p>
+            </div>
+            <a class="btn btn--primary" href="formulario-producto.html" id="new-product">Nuevo producto</a>
+          </header>
+          <div class="admin-toolbar" id="product-filters" role="search" aria-label="Filtrar productos"></div>
+          <p class="admin-results" id="product-count" aria-live="polite"></p>
+          <div id="product-table" aria-busy="true"></div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

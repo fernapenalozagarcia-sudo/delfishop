@@ -1,0 +1,13 @@
+{
+  "name": "olmo-tienda-ropa",
+  "version": "1.0.0",
+  "description": "Frontend de una tienda online de ropa (HTML, CSS y JavaScript sin frameworks).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

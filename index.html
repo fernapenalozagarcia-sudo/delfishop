@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delfi Shop · Tienda online de ropa para toda la familia</title>
+    <meta name="description" content="Tienda en línea de ropa para caballero, dama, niño, niña y bebé. Diseño atemporal, materiales cómodos y precios justos." />
+    <meta name="theme-color" content="#1b1a17" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <script src="js/boot-check.js"></script>
+    <script type="module" src="js/pages/home.js"></script>
+  </head>
+  <body>
+    <div id="app-header"></div>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&h=1000&q=80"
+          alt="Mujer con bolsas de compras caminando frente a una tienda"
+          width="1800"
+          height="1000"
+          fetchpriority="high"
+        />
+        <div class="container hero__content">
+          <p class="eyebrow eyebrow--light">Nueva temporada</p>
+          <h1 class="hero__title" id="hero-title">Prendas que se sienten tan bien como se ven</h1>
+          <p class="hero__text">Básicos impecables, vestidos con carácter y ropa cómoda para los más pequeños. Diseñado para toda la familia.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light btn--lg" href="pages/catalogo.html">Explorar catálogo</a>
+            <a class="btn btn--outline-light btn--lg" href="pages/catalogo.html?ofertas=1&amp;orden=descuento">Ver ofertas</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="categorias-title">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Colecciones</p>
+              <h2 class="section-title" id="categorias-title">Compra por categoría</h2>
+            </div>
+            <a class="btn btn--outline btn--sm" href="pages/catalogo.html">Ver todo el catálogo</a>
+          </div>
+          <div class="category-grid" id="category-grid" aria-busy="true">
+            <div class="skeleton category-skeleton"></div>
+            <div class="skeleton category-skeleton"></div>
+            <div class="skeleton category-skeleton"></div>
+            <div class="skeleton category-skeleton"></div>
+            <div class="skeleton category-skeleton"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="destacados-title">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Selección Delfi Shop</p>
+              <h2 class="section-title" id="destacados-title">Productos destacados</h2>
+              <p class="section-description">Las piezas favoritas de nuestros clientes, elegidas por su calidad y versatilidad.</p>
+            </div>
+            <a class="btn btn--outline btn--sm" href="pages/catalogo.html?destacados=1">Ver destacados</a>
+          </div>
+          <div id="featured-products" data-skeleton="4"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="promo-title">
+        <div class="container">
+          <div class="promo">
+            <div class="promo__media">
+              <img
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&h=1200&q=80"
+                alt="Mujer con conjunto amarillo posando en un estudio"
+                loading="lazy"
+                width="1100"
+                height="1200"
+              />
+            </div>
+            <div class="promo__content">
+              <p class="eyebrow">Recién llegado</p>
+              <h2 class="section-title" id="promo-title">Color, textura y comodidad para la nueva temporada</h2>
+              <p class="section-description">Descubre los lanzamientos de las últimas semanas: vestidos fluidos, sudaderas suaves y capas ligeras para combinar.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="pages/catalogo.html?novedades=1&amp;orden=novedades">Descubrir novedades</a>
+                <a class="btn btn--outline" href="pages/catalogo.html?categoria=dama">Colección Dama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="novedades-title">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Lo más nuevo</p>
+              <h2 class="section-title" id="novedades-title">Novedades</h2>
+            </div>
+            <a class="btn btn--outline btn--sm" href="pages/catalogo.html?novedades=1&amp;orden=novedades">Ver novedades</a>
+          </div>
+          <div id="new-products" data-skeleton="4"></div>
+        </div>
+      </section>
+
+      <section class="section section--sale" aria-labelledby="ofertas-title">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Por tiempo limitado</p>
+              <h2 class="section-title" id="ofertas-title">Ofertas</h2>
+              <p class="section-description">Precios especiales en prendas seleccionadas, hasta agotar existencias.</p>
+            </div>
+            <a class="btn btn--accent btn--sm" href="pages/catalogo.html?ofertas=1&amp;orden=descuento">Ver todas las ofertas</a>
+          </div>
+          <div id="sale-products" data-skeleton="4"></div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="como-comprar" aria-labelledby="como-comprar-title">
+        <div class="container">
+          <div class="section-header section-header--center">
+            <div>
+              <p class="eyebrow">Fácil y seguro</p>
+              <h2 class="section-title" id="como-comprar-title">Cómo comprar</h2>
+              <p class="section-description">Arma tu pedido en línea o escríbenos por WhatsApp. No te cobramos en el sitio: confirmamos disponibilidad y forma de pago contigo.</p>
+            </div>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__number">1</span>
+              <h3 class="step__title">Elige tus prendas</h3>
+              <p class="step__text">Filtra por categoría, talla, color o precio y revisa los detalles de cada producto.</p>
+            </li>
+            <li class="step">
+              <span class="step__number">2</span>
+              <h3 class="step__title">Agrégalas al carrito</h3>
+              <p class="step__text">Selecciona talla, color y cantidad. También puedes comprar directo por WhatsApp.</p>
+            </li>
+            <li class="step">
+              <span class="step__number">3</span>
+              <h3 class="step__title">Genera tu pedido</h3>
+              <p class="step__text">Indica tus datos y el método de entrega. Recibirás un número de pedido.</p>
+            </li>
+            <li class="step">
+              <span class="step__number">4</span>
+              <h3 class="step__title">Confirmamos y entregamos</h3>
+              <p class="step__text">Te contactamos para confirmar. Recoge en tienda sin costo o recibe en casa en 2 a 5 días hábiles.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <div id="app-footer"></div>
+  </body>
+</html>
